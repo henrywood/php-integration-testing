@@ -4,14 +4,16 @@ namespace IntegrationTesting\Tests\Integration\FileSystem;
 
 use IntegrationTesting\Exception\TestingException;
 use IntegrationTesting\PHPUnit\Runner\Extension\Handler;
-use PHPUnit\Framework\TestCase;
+//use PHPUnit\Framework\TestCase;
+
+use ELYDITestCase;
 
 /**
  * Class HandlerConfigurationTest
  * @package IntegrationTesting\Tests\Integration\FileSystem
  * @coversNothing
  */
-final class HandlerConfigurationTest extends TestCase
+final class HandlerConfigurationTest extends ELYDITestCase
 {
     public function testConstructionOfHandlerWithDefaultConfiguration(): void
     {
