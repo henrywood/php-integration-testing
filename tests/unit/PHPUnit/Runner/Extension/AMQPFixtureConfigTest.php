@@ -5,7 +5,9 @@ namespace IntegrationTesting\PHPUnit\Runner\Extension;
 use ArrayIterator;
 use IntegrationTesting\Exception\TestingException;
 use IntegrationTesting\PHPUnit\Runner\Extension\AMQP\PublishMessageConfig;
-use PHPUnit\Framework\TestCase;
+//use PHPUnit\Framework\TestCase;
+
+use ELYDITestCase;
 
 /**
  * Class AMQPFixtureConfigTest
@@ -13,7 +15,7 @@ use PHPUnit\Framework\TestCase;
  * @covers \IntegrationTesting\PHPUnit\Runner\Extension\AMQPFixtureConfig
  * @uses   \IntegrationTesting\PHPUnit\Runner\Extension\AMQP\PublishMessageConfig
  */
-final class AMQPFixtureConfigTest extends TestCase
+final class AMQPFixtureConfigTest extends ELYDITestCase
 {
     public function testConfigurationWithDefaultParams(): void
     {
