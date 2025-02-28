@@ -5,14 +5,16 @@ namespace IntegrationTesting\Tests\Integration\PDO;
 use IntegrationTesting\Driver\PDOConnection;
 use IntegrationTesting\WithAfterTestFixtureName;
 use IntegrationTesting\WithBeforeTestFixtureName;
-use PHPUnit\Framework\TestCase;
+//use PHPUnit\Framework\TestCase;
+
+use ELYDITestCase;
 
 /**
  * Class MariaDBIntegrationTest
  * @package IntegrationTesting\Tests\Integration\PDO
  * @coversNothing
  */
-final class MariaDBIntegrationTest extends TestCase implements WithBeforeTestFixtureName, WithAfterTestFixtureName
+final class MariaDBIntegrationTest extends ELYDITestCase implements WithBeforeTestFixtureName, WithAfterTestFixtureName
 {
     private const FIXTURE_NAME = 'pdo-integration-test';
 
