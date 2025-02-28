@@ -3,14 +3,16 @@
 namespace IntegrationTesting\Driver;
 
 use IntegrationTesting\Exception\TestingException;
-use PHPUnit\Framework\TestCase;
+//use PHPUnit\Framework\TestCase;
+
+use ELYDITestCase;
 
 /**
  * Class FileSystemTest
  * @package IntegrationTesting\Driver
  * @covers \IntegrationTesting\Driver\FileSystem
  */
-class FileSystemTest extends TestCase
+class FileSystemTest extends ELYDITestCase
 {
     /**
      * @var FileSystem
