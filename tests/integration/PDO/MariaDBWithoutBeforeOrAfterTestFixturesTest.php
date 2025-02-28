@@ -3,14 +3,16 @@
 namespace IntegrationTesting\Tests\Integration\PDO;
 
 use IntegrationTesting\Driver\PDOConnection;
-use PHPUnit\Framework\TestCase;
+//use PHPUnit\Framework\TestCase;
+
+use ELYDITestCase;
 
 /**
  * Class MariaDBWithoutBeforeOrAfterTestFixturesTest
  * @package IntegrationTesting\Tests\Integration\PDO
  * @coversNothing
  */
-final class MariaDBWithoutBeforeOrAfterTestFixturesTest extends TestCase
+final class MariaDBWithoutBeforeOrAfterTestFixturesTest extends ELYDITestCase
 {
     public function testReadingEphemeralTableHasNoContents(): void
     {
