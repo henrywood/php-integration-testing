@@ -8,7 +8,9 @@ use IntegrationTesting\Driver\RabbitMQ\RabbitMQService;
 use PhpAmqpLib\Channel\AMQPChannel;
 use PhpAmqpLib\Exception\AMQPTimeoutException;
 use PhpAmqpLib\Message\AMQPMessage;
-use PHPUnit\Framework\TestCase;
+//use PHPUnit\Framework\TestCase;
+
+use ELYDITestCase;
 
 /**
  * Class RabbitMQWithoutBeforeOrAfterTestFixturesTest
@@ -16,7 +18,7 @@ use PHPUnit\Framework\TestCase;
  * @coversNothing
  * @group debug
  */
-final class RabbitMQWithoutBeforeOrAfterTestFixturesTest extends TestCase
+final class RabbitMQWithoutBeforeOrAfterTestFixturesTest extends ELYDITestCase
 {
     /**
      * @var AMQPService
