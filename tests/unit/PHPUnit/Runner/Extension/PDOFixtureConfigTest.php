@@ -3,13 +3,15 @@
 namespace IntegrationTesting\PHPUnit\Runner\Extension;
 
 use IntegrationTesting\Exception\TestingException;
-use PHPUnit\Framework\TestCase;
+//use PHPUnit\Framework\TestCase;
+
+use ELYDITestCase;
 
 /**
  * Class ConfigurationTest
  * @covers \IntegrationTesting\PHPUnit\Runner\Extension\PDOFixtureConfig
  */
-final class PDOFixtureConfigTest extends TestCase
+final class PDOFixtureConfigTest extends ELYDITestCase
 {
     public function testConfigurationWithDefaultParams(): void
     {
