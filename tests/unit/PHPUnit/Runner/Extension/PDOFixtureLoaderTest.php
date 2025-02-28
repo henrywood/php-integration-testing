@@ -5,13 +5,15 @@ namespace IntegrationTesting\PHPUnit\Runner\Extension;
 use IntegrationTesting\Driver\FileSystem;
 use IntegrationTesting\Driver\PDOConnection;
 use PDO;
-use PHPUnit\Framework\TestCase;
+//use PHPUnit\Framework\TestCase;
+
+use ELYDITestCase;
 
 /**
  * @covers \IntegrationTesting\PHPUnit\Runner\Extension\PDOFixtureLoader
  * @uses   \IntegrationTesting\Driver\FileSystem
  */
-final class PDOFixtureLoaderTest extends TestCase
+final class PDOFixtureLoaderTest extends ELYDITestCase
 {
     public function testBeforeFirstTestBehaviour(): void
     {
