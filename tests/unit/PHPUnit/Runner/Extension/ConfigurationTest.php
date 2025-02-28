@@ -3,13 +3,15 @@
 namespace IntegrationTesting\PHPUnit\Runner\Extension;
 
 use IntegrationTesting\Exception\TestingException;
-use PHPUnit\Framework\TestCase;
+//use PHPUnit\Framework\TestCase;
+
+use ELYDITestCase;
 
 /**
  * Class ConfigurationTest
  * @covers \IntegrationTesting\PHPUnit\Runner\Extension\Configuration
  */
-final class ConfigurationTest extends TestCase
+final class ConfigurationTest extends ELYDITestCase
 {
     public function testConfigurationExceptionWhenNoParams(): void
     {
